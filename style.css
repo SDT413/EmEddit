@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+
+}
+#mainElement {
+    color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: "Roboto Mono", monospace;
+}
+div {
+    outline: 1px solid red
+}
+#editor {
+    background-color: rgb(34, 37, 42);
+}
+#preview{
+ background-color: rgb(41, 44, 51);
+    padding: 1rem;
+    margin: 0;
+}
+#status {
+    background-color: rgb(19, 20, 21);
+    padding: 0.5rem;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+#editorArea {
+    margin: 0;
+    padding: 1rem;
+    color: inherit;
+    background-color: rgb(34, 37, 42);
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: "Roboto Mono", monospace;
+}
+@media (max-width: 800px) {
+    #mainElement {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #status {
+        grid-column: 1 / 2;
+    }
+}

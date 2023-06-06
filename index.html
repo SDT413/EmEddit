@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEdit</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js" integrity="sha512-zAs8dHhwlTbfcVGRX1x0EZAH/L99NjAFzX6muwOcOJc7dbGFNaW4O7b9QOyCMRYBNjO+E0Kx6yLDsiPQhhWm7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src = "app.js"></script>
+</head>
+<body>
+<section x-data = "app" id = "mainElement">
+    <div id = "editor"><textarea id = "editorArea" x-model = "txt"></textarea></div>
+    <div id = "preview" x-html = "markdown"></div>
+    <div id="status"><b x-text = "chars"></b>
+        <b x-text = "words"></b></div>
+</section>
+<h1>Content:</h1>
+<a href = "about.html">About</a>
+</body>
+</html>
